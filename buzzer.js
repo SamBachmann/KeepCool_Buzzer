@@ -17,6 +17,7 @@ var canvas = document.getElementById("canvas")
             console.log("restart")
             //beep
             buzzSound.pause()
+            buzzSound.currentTime = 0;
             bip.play()
 
             actualtime = TIMER_DURATION
@@ -37,6 +38,7 @@ var canvas = document.getElementById("canvas")
             }else{
                 console.log("BUZZ")
                 isRunning = false
+                buzzSound.
                 buzzSound.play()
                  //buzz, we need a sound   
             }

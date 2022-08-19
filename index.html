@@ -31,15 +31,17 @@
 
         function restart() {
             console.log("restart")
+            //beep
+            buzzSound.pause()
+            bip.play()
+
             actualtime = TIMER_DURATION
             if (!isRunning || firstPress){
                 isRunning = true
                 main()
                 firstPress = false
             } 
-            
-            //beep
-            bip.play()
+        
         }
         
 

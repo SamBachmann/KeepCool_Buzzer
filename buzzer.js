@@ -38,7 +38,6 @@ var canvas = document.getElementById("canvas")
             }else{
                 console.log("BUZZ")
                 isRunning = false
-                buzzSound.
                 buzzSound.play()
                  //buzz, we need a sound   
             }

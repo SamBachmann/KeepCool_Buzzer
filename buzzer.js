@@ -2,7 +2,7 @@
 
 var canvas = document.getElementById("canvas")
         var ctx = canvas.getContext('2d')
-        const TIMER_DURATION = 8
+        const TIMER_DURATION = 800
 
         
         var actualtime = TIMER_DURATION
@@ -34,7 +34,7 @@ var canvas = document.getElementById("canvas")
             //console.log("main")
             if (actualtime > 0){
                 -- actualtime
-                setTimeout(main, 1000)
+                setTimeout(main, 10)
             }else{
                 console.log("BUZZ")
                 isRunning = false
